@@ -14,8 +14,8 @@ except ImportError:
 
 def main():
     parser = argparse.ArgumentParser(
-        description="Wrapper for PgsToSrt running via podman.",
-        epilog='Example: ./pgstosrt.py -l eng "Dexter (2006) - S01E01 - Dexter (1080p BluRay x265 ImE)"',
+        description="Wrapper for PgsToSrt running via podman/docker.",
+        epilog='Example: ./pgstosrt.py -l eng "video.sup"',
     )
     parser.add_argument(
         "input", help="Input file name (with or without the .sup extension)"
